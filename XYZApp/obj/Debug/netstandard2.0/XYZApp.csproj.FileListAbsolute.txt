@@ -1,0 +1,14 @@
+/Users/ibrahimmehkri/Documents/C#/Xamarin/XYZApp/XYZApp/bin/Debug/netstandard2.0/XYZApp.deps.json
+/Users/ibrahimmehkri/Documents/C#/Xamarin/XYZApp/XYZApp/bin/Debug/netstandard2.0/XYZApp.dll
+/Users/ibrahimmehkri/Documents/C#/Xamarin/XYZApp/XYZApp/bin/Debug/netstandard2.0/ref/XYZApp.dll
+/Users/ibrahimmehkri/Documents/C#/Xamarin/XYZApp/XYZApp/bin/Debug/netstandard2.0/XYZApp.pdb
+/Users/ibrahimmehkri/Documents/C#/Xamarin/XYZApp/XYZApp/obj/Debug/netstandard2.0/XYZApp.csprojAssemblyReference.cache
+/Users/ibrahimmehkri/Documents/C#/Xamarin/XYZApp/XYZApp/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/ibrahimmehkri/Documents/C#/Xamarin/XYZApp/XYZApp/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/ibrahimmehkri/Documents/C#/Xamarin/XYZApp/XYZApp/obj/Debug/netstandard2.0/XYZApp.csproj.CoreCompileInputs.cache
+/Users/ibrahimmehkri/Documents/C#/Xamarin/XYZApp/XYZApp/obj/Debug/netstandard2.0/XYZApp.AssemblyInfoInputs.cache
+/Users/ibrahimmehkri/Documents/C#/Xamarin/XYZApp/XYZApp/obj/Debug/netstandard2.0/XYZApp.AssemblyInfo.cs
+/Users/ibrahimmehkri/Documents/C#/Xamarin/XYZApp/XYZApp/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/ibrahimmehkri/Documents/C#/Xamarin/XYZApp/XYZApp/obj/Debug/netstandard2.0/XYZApp.dll
+/Users/ibrahimmehkri/Documents/C#/Xamarin/XYZApp/XYZApp/obj/Debug/netstandard2.0/ref/XYZApp.dll
+/Users/ibrahimmehkri/Documents/C#/Xamarin/XYZApp/XYZApp/obj/Debug/netstandard2.0/XYZApp.pdb

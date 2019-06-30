@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d" 
+             x:Class="XYZApp.MainPage"
+             xmlns:local="clr-namespace:XYZApp">
+    
+    <StackLayout x:Name="myStackLayout"
+                 Padding="10, 50, 10, 10">
+        
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <local:StringToImageSourceConverter x:Key="imageSourceConverter" ImageFolderPath="XYZApp.Images"/>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+        
+        <StackLayout.BindingContext>
+            <local:ViewModel />
+        </StackLayout.BindingContext>
+        
+        <Image Source="{Binding Path=User.ImageUrl}" 
+               HorizontalOptions="Center"/>
+        
+        <Label Text="{Binding Path=User.FullName}"
+               HorizontalOptions="Center"
+               Margin="10"
+               FontSize="Medium"
+               FontAttributes="Bold"/>
+        
+        <StackLayout Orientation="Horizontal"
+                     Spacing="10"
+                     HorizontalOptions="Center">
+            
+            <StackLayout>
+                <Label Text="{Binding Path=User.Followers}"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"/>
+                <Label Text="Followers"
+                       HorizontalOptions="Center"
+                       FontSize="Micro"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="{Binding Path=User.Following}"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"/>
+                <Label Text="Following"
+                       HorizontalOptions="Center"
+                       FontSize="Micro"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="{Binding Path=User.Posts}"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"/>
+                <Label Text="Posts"
+                       HorizontalOptions="Center"
+                       FontSize="Micro"/>
+            </StackLayout>
+            
+        </StackLayout>
+        
+        <ListView ItemsSource="{Binding Path=MenuItems}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"/>
+                            </Grid.RowDefinitions>
+                            
+                            <Image Source="{Binding Path=ImageFileName, Converter={StaticResource imageSourceConverter}}"
+                                   VerticalOptions="Center"
+                                   Grid.Column="0"
+                                   Grid.Row="0"/>
+                            
+                            <Label Text="{Binding Path=Text}"
+                                   VerticalOptions="Center"
+                                   Grid.Column="1"
+                                   Grid.Row="0"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        
+        
+    </StackLayout>
+    
+</ContentPage>

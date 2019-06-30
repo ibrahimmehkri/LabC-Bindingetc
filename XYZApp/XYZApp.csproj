@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Images\amazon_icon.jpg" />
+    <None Remove="Images\bookmarks.jpg" />
+    <None Remove="Images\categories.jpg" />
+    <None Remove="Images\drafts.jpg" />
+    <None Remove="Images\editProfile.jpg" />
+    <None Remove="Images\message.jpg" />
+    <None Remove="Images\offers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\amazon_icon.jpg" />
+    <EmbeddedResource Include="Images\bookmarks.jpg" />
+    <EmbeddedResource Include="Images\categories.jpg" />
+    <EmbeddedResource Include="Images\drafts.jpg" />
+    <EmbeddedResource Include="Images\editProfile.jpg" />
+    <EmbeddedResource Include="Images\message.jpg" />
+    <EmbeddedResource Include="Images\offers.jpg" />
+  </ItemGroup>
+</Project>
