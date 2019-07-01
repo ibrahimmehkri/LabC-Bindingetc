@@ -19,6 +19,7 @@
     <Folder Include="Views\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Models\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\amazon_icon.jpg" />
@@ -37,5 +38,9 @@
     <EmbeddedResource Include="Images\editProfile.jpg" />
     <EmbeddedResource Include="Images\message.jpg" />
     <EmbeddedResource Include="Images\offers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Data.cs" />
+    <Compile Remove="Data\ListItemData.cs" />
   </ItemGroup>
 </Project>

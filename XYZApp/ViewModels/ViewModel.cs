@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using Xamarin.Forms;
+using XYZApp.Data;
 using XYZApp.Models;
 
 namespace XYZApp
@@ -15,45 +16,9 @@ namespace XYZApp
 
         public ViewModel()
         {
-            User = new User {
-                ImageUrl = "https://www.w3schools.com/w3images/avatar2.png",
-                FullName = "Elon Musk",
-                Followers = "2.4K",
-                Following = "150",
-                Posts = "175"
-            };
-
-            MenuItems = new List<MyMenuItem>();
-            MenuItems.Add(new MyMenuItem {
-                Text = "Bookmarks",
-                ImageFileName = "bookmarks.jpg"
-            });
-            MenuItems.Add(new MyMenuItem {
-                Text = "Categories",
-                ImageFileName = "categories.jpg"
-            });
-            MenuItems.Add(new MyMenuItem
-            {
-                Text = "Drafts",
-                ImageFileName = "drafts.jpg"
-            });
-            MenuItems.Add(new MyMenuItem
-            {
-                Text = "Edit Profile",
-                ImageFileName = "editProfile.jpg"
-            });
-            MenuItems.Add(new MyMenuItem
-            {
-                Text = "Messages",
-                ImageFileName = "message.jpg"
-            });
-            MenuItems.Add(new MyMenuItem
-            {
-                Text = "Offers",
-                ImageFileName = "offers.jpg"
-            });
-
-        }
+            User = MySingleton.Instance.User;
+            MenuItems = MySingleton.Instance.MenuItems;
+        }   
     }
 
     public class StringToImageSourceConverter : IValueConverter
