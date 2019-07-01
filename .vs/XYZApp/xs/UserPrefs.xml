@@ -1,8 +1,21 @@
 ﻿<Properties StartupConfiguration="{1CC1D78B-BD0C-48D0-8324-682EE01B5FB7}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="XYZApp/ViewModels/ViewModel.cs">
     <Files>
-      <File FileName="XYZApp/ViewModels/ViewModel.cs" Line="1" Column="1" />
+      <File FileName="XYZApp/ViewModels/ViewModel.cs" Line="15" Column="39" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="XYZApp" expanded="True" selected="True">
+            <Node name="XYZApp" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.XYZApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.80FD0ECF-6D4E-455B-BFF8-EE6A2A58B65C" />
