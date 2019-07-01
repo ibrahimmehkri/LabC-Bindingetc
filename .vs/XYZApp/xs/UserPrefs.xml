@@ -1,16 +1,21 @@
 ﻿<Properties StartupConfiguration="{1CC1D78B-BD0C-48D0-8324-682EE01B5FB7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XYZApp/ViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XYZApp/Models/MenuItem.cs">
     <Files>
-      <File FileName="XYZApp/MainPage.xaml.cs" Line="28" Column="6" />
-      <File FileName="XYZApp/MainPage.xaml" Line="4" Column="41" />
-      <File FileName="XYZApp/ViewModel.cs" Line="6" Column="17" />
+      <File FileName="XYZApp/MainPage.xaml.cs" Line="25" Column="1" />
+      <File FileName="XYZApp/MainPage.xaml" />
+      <File FileName="XYZApp/ViewModel.cs" Line="70" Column="50" />
+      <File FileName="XYZApp/Models/User.cs" Line="5" Column="6" />
+      <File FileName="XYZApp/Models/MenuItem.cs" Line="9" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="XYZApp" expanded="True">
             <Node name="XYZApp" expanded="True">
-              <Node name="ViewModel.cs" selected="True" />
+              <Node name="Models" expanded="True">
+                <Node name="MenuItem.cs" selected="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True" />
             </Node>
           </Node>
         </State>

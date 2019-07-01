@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using Xamarin.Forms;
+using XYZApp.Models;
 
 namespace XYZApp
 {
     public class ViewModel
     {
-        public List<MenuItem> MenuItems { get; set; }
+        public List<MyMenuItem> MenuItems { get; set; }
 
         public User User { get; set; }
 
@@ -22,52 +23,37 @@ namespace XYZApp
                 Posts = "175"
             };
 
-            MenuItems = new List<MenuItem>();
-            MenuItems.Add(new MenuItem {
+            MenuItems = new List<MyMenuItem>();
+            MenuItems.Add(new MyMenuItem {
                 Text = "Bookmarks",
                 ImageFileName = "bookmarks.jpg"
             });
-            MenuItems.Add(new MenuItem {
+            MenuItems.Add(new MyMenuItem {
                 Text = "Categories",
                 ImageFileName = "categories.jpg"
             });
-            MenuItems.Add(new MenuItem
+            MenuItems.Add(new MyMenuItem
             {
                 Text = "Drafts",
                 ImageFileName = "drafts.jpg"
             });
-            MenuItems.Add(new MenuItem
+            MenuItems.Add(new MyMenuItem
             {
                 Text = "Edit Profile",
                 ImageFileName = "editProfile.jpg"
             });
-            MenuItems.Add(new MenuItem
+            MenuItems.Add(new MyMenuItem
             {
                 Text = "Messages",
                 ImageFileName = "message.jpg"
             });
-            MenuItems.Add(new MenuItem
+            MenuItems.Add(new MyMenuItem
             {
                 Text = "Offers",
                 ImageFileName = "offers.jpg"
             });
 
         }
-    }
-
-    public class User
-    {
-        public string ImageUrl { get; set; }
-        public string FullName { get; set; }
-        public string Followers { get; set; }
-        public string Following { get; set; }
-        public string Posts { get; set; }
-    }
-
-    public class MenuItem
-    {
-        public string Text { get; set; }
-        public string ImageFileName { get; set; }
     }
 
     public class StringToImageSourceConverter : IValueConverter
