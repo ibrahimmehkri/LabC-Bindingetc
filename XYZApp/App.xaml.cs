@@ -10,7 +10,7 @@ namespace XYZApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new RegisterPage());
         }
 
         protected override void OnStart()

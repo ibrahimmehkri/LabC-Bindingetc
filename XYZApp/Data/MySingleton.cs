@@ -15,7 +15,6 @@ namespace XYZApp.Data
             User = new User
             {
                 ImageUrl = "https://www.w3schools.com/w3images/avatar2.png",
-                FullName = "Elon Musk",
                 Followers = "2.4K",
                 Following = "150",
                 Posts = "175"

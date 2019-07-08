@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="XYZApp.RegisterPage"
+             xmlns:local="clr-namespace:XYZApp">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10, 50, 10, 10">
+            <StackLayout.BindingContext>
+                <local:ViewModel />
+            </StackLayout.BindingContext>
+            
+            <Label Text="Registration"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   Margin="10"/>
+            
+                <StackLayout Orientation="Horizontal" Spacing="5">
+                    <Editor Placeholder="Name"
+                            VerticalOptions="Start"
+                            Margin="15"
+                            Text="{Binding Path=Name.Value}"
+                            Keyboard="Text"
+                            HorizontalOptions="FillAndExpand"/>   
+                    
+                    <Image Source="https://banner2.kisspng.com/20180320/apq/kisspng-check-mark-checkbox-computer-icons-resort-green-tick-icon-5ab0e1fccb1139.6239247415215416288318.jpg"
+                           WidthRequest="20"
+                           IsVisible="{Binding Path=Name.IsValid}"/>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal" Spacing="5">
+                    <Editor Placeholder="Email Address"
+                            VerticalOptions="Start"
+                            Margin="15"
+                            Text="{Binding Path=Email.Value}"
+                            Keyboard="Email"
+                            HorizontalOptions="FillAndExpand"/>
+                    
+                    <Image Source="https://banner2.kisspng.com/20180320/apq/kisspng-check-mark-checkbox-computer-icons-resort-green-tick-icon-5ab0e1fccb1139.6239247415215416288318.jpg"
+                           WidthRequest="20"
+                           IsVisible="{Binding Path=Email.IsValid}"/>
+                </StackLayout>
+            
+                <StackLayout Orientation="Horizontal" Spacing="5">
+                    <Editor Placeholder="Username"
+                            VerticalOptions="Start"
+                            Margin="15"
+                            Text="{Binding Path=Username.Value}"
+                            HorizontalOptions="FillAndExpand"/>  
+                    
+                    <Image Source="https://banner2.kisspng.com/20180320/apq/kisspng-check-mark-checkbox-computer-icons-resort-green-tick-icon-5ab0e1fccb1139.6239247415215416288318.jpg"
+                           WidthRequest="20"
+                           IsVisible="{Binding Path=Username.IsValid}"/>
+                </StackLayout>
+            
+                <StackLayout Orientation="Horizontal" Spacing="5">
+                    <Editor Placeholder="Phone Number"
+                            VerticalOptions="Start"
+                            Margin="15"
+                            Text="{Binding Path=Phonenumber.Value}"
+                            Keyboard="Telephone"
+                            HorizontalOptions="FillAndExpand"/>  
+                    
+                    <Image Source="https://banner2.kisspng.com/20180320/apq/kisspng-check-mark-checkbox-computer-icons-resort-green-tick-icon-5ab0e1fccb1139.6239247415215416288318.jpg"
+                           WidthRequest="20"
+                           IsVisible="{Binding Path=Phonenumber.IsValid}"/>
+                </StackLayout>
+            
+                
+            
+            
+            <Button Text="Next"
+                    VerticalOptions="EndAndExpand"
+                    BackgroundColor="Teal"
+                    TextColor="White"
+                    Command="{Binding Path=Command}"/>
+            
+        </StackLayout>    
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

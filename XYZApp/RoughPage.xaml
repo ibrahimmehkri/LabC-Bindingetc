@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="XYZApp.RoughPage"
+             xmlns:local="clr-namespace:XYZApp">
+    
+    
+    <StackLayout VerticalOptions="Center"
+                 Padding="15">
+        
+        <Label Text="Pause">
+            <Label.Behaviors>
+                <local:ToggleBehavior x:Name="toggle"/>
+            </Label.Behaviors>
+            <Label.Triggers>
+                <DataTrigger TargetType="Label" Binding="{Binding Source={x:Reference toggle}, Path=IsTapped}" Value="True">
+                    <DataTrigger.Setters>
+                        <Setter Property="Text" Value="Play"/>
+                    </DataTrigger.Setters>
+                </DataTrigger>
+            </Label.Triggers>
+        </Label>
+        
+    </StackLayout>
+    
+</ContentPage>

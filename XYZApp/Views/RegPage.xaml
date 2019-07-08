@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XYZApp.RegPage">
+    <ContentPage.Content>
+        <StackLayout Padding="10, 50, 10, 10">
+            
+            <Label Text="Hello World"
+                   FontSize="Large"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

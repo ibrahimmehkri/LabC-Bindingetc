@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="XYZApp.Views.RegPage">
+    <ContentPage.Content>
+        <StackLayout Padding="10, 50, 10, 10">
+            
+            <Label Text="Registration"
+                   FontSize="Large"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"
+                   FontAttributes="Bold"/>
+            
+            <Editor Placeholder="Name"
+                    VerticalOptions="Start"/>
+            
+            <Editor Placeholder="Email Address"
+                    VerticalOptions="Start"/>
+            
+            <Editor Placeholder="Username"
+                    VerticalOptions="Start"/>
+            
+            <Editor Placeholder="Phone Number"
+                    VerticalOptions="Start"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

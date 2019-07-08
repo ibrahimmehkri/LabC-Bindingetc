@@ -20,6 +20,7 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Models\" />
     <Folder Include="Data\" />
+    <Folder Include="Validations\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\amazon_icon.jpg" />
@@ -29,6 +30,17 @@
     <None Remove="Images\editProfile.jpg" />
     <None Remove="Images\message.jpg" />
     <None Remove="Images\offers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="RegistrationPage.xaml" />
+    <EmbeddedResource Remove="RegistrationPage.xaml" />
+    <EmbeddedResource Remove="Views\RegistrationPage.xaml" />
+    <EmbeddedResource Remove="RegPage.xaml" />
+    <EmbeddedResource Remove="Views\RegPage.xaml" />
+    <EmbeddedResource Remove="RegPage.xaml" />
+    <EmbeddedResource Remove="Register2Page.xaml" />
+    <EmbeddedResource Remove="RoughPage.xaml" />
+    <EmbeddedResource Remove="PracticePage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\amazon_icon.jpg" />
@@ -42,5 +54,13 @@
   <ItemGroup>
     <Compile Remove="Data.cs" />
     <Compile Remove="Data\ListItemData.cs" />
+    <Compile Remove="Views\RegistrationPage.xaml.cs" />
+    <Compile Remove="Views\RegPage.xaml.cs" />
+    <Compile Remove="Register2Page.xaml.cs" />
+    <Compile Remove="MyDateViewModel.cs" />
+    <Compile Remove="RoughPage.xaml.cs" />
+    <Compile Remove="RoughVM.cs" />
+    <Compile Remove="ValidationRules.cs" />
+    <Compile Remove="PracticePage.xaml.cs" />
   </ItemGroup>
 </Project>
